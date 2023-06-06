@@ -22,6 +22,8 @@ $ npm install carefree-webview-tbs-utils --save
 ```
 ### 下载x5内核(android)
 
+注意：当`内核下载完成`之后，返回`x5内核加载失败`时,需要重新启动应用
+
 ```ts
   try{
     initDownloadTBS((info)=>{
@@ -66,7 +68,7 @@ export type InitDownloadTBSReturn =
   ItemType<'installFinish', number> |// 安装结束时的状态，安装成功时errorCode为200,其他均为失败，外部不需要关注具体的失败原因
   ItemType<'downloadProgress', number> |// 下载过程的通知，提供当前下载进度[0-100] ，其他值参考[https://x5.tencent.com/docs/tbsapi/reference/com/tencent/smtt/sdk/TbsCommonCode.html]
   ItemType<'viewInitFinished', boolean> |// x5內核初始化完成的回调，true表x5内核加载成功，否则表加载失败，会自动切换到系统内核。
-  ItemType<'coreInitFinished', boolean>// 内核初始化完毕 
+  ItemType<'coreInitFinished', boolean>// 内核初始化完毕 都是直接返回true,只是为了说明走了这个方法
 
 /**
  * 获取初始x5内核加载信息
