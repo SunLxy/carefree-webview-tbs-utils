@@ -1,0 +1,40 @@
+{
+  "name": "carefree-webview-tbs-utils",
+  "title": "Carefree Webview Tbs Utils",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "files": [
+    "README.md",
+    "android",
+    "index.ts",
+    "ios",
+    "carefree-webview-tbs-utils.podspec"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunLxy/carefree-webview-tbs-utils.git",
+    "baseUrl": "https://github.com/SunLxy/carefree-webview-tbs-utils"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "SunLxy",
+    "email": "1011771396@qq.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.71.3"
+  }
+}
