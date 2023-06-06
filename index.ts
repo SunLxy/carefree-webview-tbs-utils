@@ -38,11 +38,11 @@ export type InitTBSReturn =
 /**
  * 获取初始x5内核加载信息
 */
-export const getInitX5sdkInfo = (): InitX5sdkInfoReturn | null => {
+export const getInitX5sdkInfo = async (): Promise<InitX5sdkInfoReturn | null> => {
   if (Platform.OS === "android") {
     return NativeModules.CarefreeWebViewTBSUtils.getInitX5sdkInfo();
   }
-  return null
+  return Promise.resolve(null)
 }
 
 /**
