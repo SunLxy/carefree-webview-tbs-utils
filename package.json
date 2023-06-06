@@ -2,7 +2,7 @@
   "name": "carefree-webview-tbs-utils",
   "title": "Carefree Webview Tbs Utils",
   "version": "1.0.4",
-  "description": "",
+  "description": "Carefree Webview Tbs Utils",
   "main": "index.ts",
   "files": [
     "README.md",
