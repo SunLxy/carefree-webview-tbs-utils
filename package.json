@@ -1,7 +1,7 @@
 {
   "name": "carefree-webview-tbs-utils",
   "title": "Carefree Webview Tbs Utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.ts",
   "files": [
