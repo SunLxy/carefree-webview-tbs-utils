@@ -38,9 +38,6 @@ public class CarefreeWebViewTBSUtilsModule extends ReactContextBaseJavaModule {
     public CarefreeWebViewTBSUtilsModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
-            // 用于在 React Native 中获取 DeviceEventManagerModule.RCTDeviceEventEmitter 类的 JS Module 对象，
-        // 以便在 JS 端发送和侦听基于设备事件的消息
-        eventEmitter = reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class);
     }
 
     @Override
@@ -72,7 +69,7 @@ public class CarefreeWebViewTBSUtilsModule extends ReactContextBaseJavaModule {
      * 下载x5内核
      */
     @ReactMethod
-    public void initTBS() {
+    public void initDownloadTBS() {
         // 在调用TBS初始化、创建WebView之前进行如下配置
         HashMap map = new HashMap();
         map.put(TbsCoreSettings.TBS_SETTINGS_USE_SPEEDY_CLASSLOADER, true);
